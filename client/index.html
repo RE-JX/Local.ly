@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<!-- Where we declare where our main app file (index.js equivalent for React) -->
+<html ng-app='locally'>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Local.Ly</title>
+  <!-- Local CSS for customization and Angular Material -->
+  <link rel="stylesheet" type="text/css" href="styles/style.css" />
+  <link rel="stylesheet" href="/node_modules/angular-material/angular-material.css">
+</head>
+
+<body>
+
+<!-- Header for the our SPA (Single Page Application) -->
+  <div layout="row" class="container">
+    <h1>Local.ly</h1>
+  </div>
+
+<!-- Where we'll have the different views rendering through the ng-router -->
+  <div ng-view></div>
+
+<!-- Local routes for files -->
+  <script src="services/services.js"></script>
+  <script src="dashboard/dashboard.js"></script>
+  <script src="app.js"></script>
+
+<!-- Node modules we'll be using -->
+  <script src="../node_modules/angular/angular.js"></script>
+  <script src="../node_modules/angular-aria/angular-aria.js"></script>
+  <script src="../node_modules/angular-animate/angular-animate.js"></script>
+  <script src="../node_modules/angular-material/angular-material.js"></script>
+</body>
+
+</html>
