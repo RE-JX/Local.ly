@@ -16,7 +16,7 @@ angular.module('locally', [
   .config(function($routeProvider, $httpProvider) {
   $routeProvider
     .when('/dashboard', {
-      templateUrl: 'dashboard/dashboard.html',
+      templateUrl: '/dashboard/dashboard.html',
     })
 
     // Right now the default page is set to the dashboard view

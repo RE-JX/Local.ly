@@ -7,8 +7,14 @@
   <meta charset="utf-8" />
   <title>Local.Ly</title>
   <!-- Local CSS for customization and Angular Material -->
-  <link rel="stylesheet" type="text/css" href="styles/style.css" />
-  <link rel="stylesheet" href="/node_modules/angular-material/angular-material.css">
+  <link rel="stylesheet" type="text/css" href="/styles/styles.css" />
+  <!-- Node modules we'll be using -->
+  <script src="/public/angular/angular.js"></script>
+  <script src="/public/angular-route/angular-route.js"></script>
+  <script src="/public/angular-aria/angular-aria.js"></script>
+  <script src="/public/angular-animate/angular-animate.js"></script>
+  <script src="/public/angular-material/angular-material.js"></script>
+  <link rel="stylesheet" href="/public/angular-material/angular-material.css">
 </head>
 
 <body>
@@ -22,15 +28,10 @@
   <div ng-view></div>
 
 <!-- Local routes for files -->
-  <script src="services/services.js"></script>
-  <script src="dashboard/dashboard.js"></script>
-  <script src="app.js"></script>
+  <script src="/services/services.js"></script>
+  <script src="/dashboard/dashboard.js"></script>
+  <script src="/app.js"></script>
 
-<!-- Node modules we'll be using -->
-  <script src="../node_modules/angular/angular.js"></script>
-  <script src="../node_modules/angular-aria/angular-aria.js"></script>
-  <script src="../node_modules/angular-animate/angular-animate.js"></script>
-  <script src="../node_modules/angular-material/angular-material.js"></script>
 </body>
 
 </html>
