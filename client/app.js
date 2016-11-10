@@ -3,6 +3,7 @@
 angular.module('locally', [
     'locally.services',
     'locally.dashboard',
+    'locally.campaigns',
     'ngRoute',
     'ngMaterial'
   ])
